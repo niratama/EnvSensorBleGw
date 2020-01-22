@@ -1,0 +1,11 @@
+---
+devices:
+  'd8:a0:1d:xx:xx:01':
+    channelID: 99991
+    writeKey: 0123456789abcdef
+  'd8:a0:1d:xx:xx:02':
+    channelID: 99992
+    writeKey: 0123456789abcdef
+  'd8:a0:1d:xx:xx:03':
+    channelID: 99993
+    writeKey: 0123456789abcdef
