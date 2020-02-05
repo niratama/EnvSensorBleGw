@@ -58,6 +58,8 @@ class ScanDelegate(DefaultDelegate):
             for (adtype, desc, value) in dev.getScanData():
                 #print(adtype, desc, value, dev.addr)
                 if desc == 'Manufacturer' and value[0:4] == 'ffff':
+                    if dev.addr not in devices:
+                        return
                     if dev.addr not in self.devs:
                         amconf = devices[dev.addr]
                         self.devs[dev.addr] = {
